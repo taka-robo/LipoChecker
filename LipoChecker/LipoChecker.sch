@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:LipoChecker-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -530,17 +531,6 @@ F 3 "" H 4375 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LM358 U4
-U 2 1 5DF9A5F7
-P 5000 2800
-F 0 "U4" H 5000 3167 50  0000 C CNN
-F 1 "LM358" H 5000 3076 50  0000 C CNN
-F 2 "" H 5000 2800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5000 2800 50  0001 C CNN
-	2    5000 2800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R16
 U 1 1 5DF9A5FD
 P 4425 2700
@@ -626,17 +616,6 @@ Wire Wire Line
 	3400 3075 3850 3075
 Wire Wire Line
 	3850 2900 4325 2900
-$Comp
-L Amplifier_Operational:LM358 U5
-U 1 1 5DF9FCA8
-P 5200 3725
-F 0 "U5" H 5200 4092 50  0000 C CNN
-F 1 "LM358" H 5200 4001 50  0000 C CNN
-F 2 "" H 5200 3725 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5200 3725 50  0001 C CNN
-	1    5200 3725
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R19
 U 1 1 5DF9FCAF
@@ -724,17 +703,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 3825 4525 3825
 $Comp
-L Amplifier_Operational:LM358 U5
-U 2 1 5DFA6D6E
-P 5400 4650
-F 0 "U5" H 5400 5017 50  0000 C CNN
-F 1 "LM358" H 5400 4926 50  0000 C CNN
-F 2 "" H 5400 4650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5400 4650 50  0001 C CNN
-	2    5400 4650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R23
 U 1 1 5DFA6D75
 P 4825 4550
@@ -820,17 +788,6 @@ Wire Wire Line
 	3400 4675 3850 4675
 Wire Wire Line
 	3850 4750 4725 4750
-$Comp
-L Amplifier_Operational:LM358 U6
-U 1 1 5DFB0700
-P 5625 5575
-F 0 "U6" H 5625 5942 50  0000 C CNN
-F 1 "LM358" H 5625 5851 50  0000 C CNN
-F 2 "" H 5625 5575 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5625 5575 50  0001 C CNN
-	1    5625 5575
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R27
 U 1 1 5DFB0707
@@ -918,7 +875,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 5675 4950 5675
 Connection ~ 5050 1875
-Connection ~ 5300 2800
 Wire Wire Line
 	5925 5575 6300 5575
 Wire Wire Line
@@ -1395,4 +1351,52 @@ Wire Wire Line
 	8975 2200 8975 2475
 Wire Wire Line
 	8975 2675 8975 2950
+$Comp
+L Amplifier_Operational:LM358 U4
+U 2 1 5DF70A70
+P 5000 2800
+F 0 "U4" H 5000 2433 50  0000 C CNN
+F 1 "LM358" H 5000 2524 50  0000 C CNN
+F 2 "" H 5000 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5000 2800 50  0001 C CNN
+	2    5000 2800
+	1    0    0    1   
+$EndComp
+Connection ~ 5300 2800
+$Comp
+L Amplifier_Operational:LM358 U8
+U 1 1 5DF71163
+P 5200 3725
+F 0 "U8" H 5200 3358 50  0000 C CNN
+F 1 "LM358" H 5200 3449 50  0000 C CNN
+F 2 "" H 5200 3725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5200 3725 50  0001 C CNN
+	1    5200 3725
+	1    0    0    1   
+$EndComp
+Connection ~ 5500 3725
+$Comp
+L Amplifier_Operational:LM358 U8
+U 2 1 5DF71211
+P 5400 4650
+F 0 "U8" H 5400 4283 50  0000 C CNN
+F 1 "LM358" H 5400 4374 50  0000 C CNN
+F 2 "" H 5400 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5400 4650 50  0001 C CNN
+	2    5400 4650
+	1    0    0    1   
+$EndComp
+Connection ~ 5700 4650
+$Comp
+L Amplifier_Operational:LM358 U9
+U 1 1 5DF712BF
+P 5625 5575
+F 0 "U9" H 5625 5208 50  0000 C CNN
+F 1 "LM358" H 5625 5299 50  0000 C CNN
+F 2 "" H 5625 5575 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5625 5575 50  0001 C CNN
+	1    5625 5575
+	1    0    0    1   
+$EndComp
+Connection ~ 5925 5575
 $EndSCHEMATC
